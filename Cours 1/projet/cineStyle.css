@@ -1,0 +1,45 @@
+body {
+  background-color: #c0c0c0;
+  max-height: 100%;
+  max-width: 110%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+nav {
+  text-align: center;
+  padding: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-template: 1fr / repeat(5, 1fr);
+  align-items: self-end;
+  font-size: 30px;
+  background-color: darkslategray;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav :nth-child(1) {
+  grid-column: 1;
+}
+nav :nth-child(2) {
+  grid-column: 2;
+}
+nav a {
+  color: wheat;
+  text-decoration: none;
+}
+nav :hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media (max-width: 768px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  nav {
+    display: grid; /* Assurez-vous que main est une grille */
+    grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    gap: 15px; /* Espacement entre les éléments */
+  }
+}

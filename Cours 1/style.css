@@ -1,0 +1,153 @@
+body {
+  background-color: #c0c0c0;
+  max-height: 100%;
+  max-width: 110%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+header {
+  background-color: darkslategray;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  padding-left: 25px;
+  border: 2px solid black;
+}
+nav {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+}
+nav a {
+  text-decoration: none;
+  margin-top: auto;
+  font-size: 2vw;
+  color: wheat;
+}
+nav a:nth-child(1) {
+  grid-column-start: 1;
+}
+nav a:nth-child(2) {
+  grid-column-start: 3;
+}
+nav img {
+  width: 20%;
+  height: 52%%;
+  font-size: 1.3vw;
+}
+
+main {
+  background-color: white;
+  padding: 10px;
+  padding-left: 25px;
+  font-size: 1.2vw;
+  max-width: 100%;
+  display: grid;
+  grid-template: 1fr / 50% 50%;
+  border: 2px solid black;
+  border-top: none;
+  border-bottom: none;
+}
+.stud {
+  display: grid;
+  grid-template: 1fr 1px 1fr / 1fr;
+}
+h3 {
+  font-size: 1.2vw;
+}
+.pp {
+  width: 100%; /* L'élément .pp prend toute la largeur disponible de son conteneur parent */
+  max-width: 80%; /* Limite la largeur de l'image à 250px (tu peux ajuster cette valeur) */
+  margin: 0 auto; /* Centre l'élément .pp si nécessaire */
+  padding: 10px;
+}
+
+.pp img {
+  width: 80%; /* L'image prendra toute la largeur du conteneur .pp */
+  height: 80%; /* Garder les proportions de l'image */
+}
+
+.info img {
+  width: 25px;
+  height: 25px;
+}
+.purp {
+  color: purple;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+form textarea {
+  width: 100%; /* Prendre toute la largeur disponible */
+  box-sizing: border-box; /* Inclure les marges et le padding dans la largeur totale */
+  resize: none;
+}
+
+.stud section:first-of-type {
+  margin-top: auto;
+}
+.center,
+table {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(170, 76, 76);
+  border-radius: 0 0 10px 10px;
+  border: 2px solid black;
+}
+footer img {
+  max-width: 40px;
+  max-height: 40px;
+  padding: 10px;
+}
+footer a:nth-child(2) {
+  grid-column-start: 3;
+}
+footer a:nth-child(3) {
+  grid-column-start: 5;
+}
+footer a :hover {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Pour les écrans de moins de 768px (tablettes et smartphones) */
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .info,
+  .stud,
+  form,
+  nav a {
+    font-size: 16px; /* Réduit la taille du texte pour mieux s'adapter à l'écran */
+  }
+  .stud section:first-of-type {
+    margin-top: 5%;
+  }
+}
+
+/* Pour les très petits écrans (smartphones en portrait) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em; /* Réduit la taille du titre pour les petits écrans */
+  }
+
+  .info {
+    font-size: 14px; /* Réduit encore plus la taille du texte */
+  }
+}

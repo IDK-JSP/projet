@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-removebg-preview.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          >Acceuil
+          <img
+            src="images/house_icon-icons.com_70104-removebg-preview.png"
+            alt="Acceuil"
+        /></a>
+        <a href="https://www.w3schools.com/tags/default.asp"
+          >Doc<img src="images/w3c_home-removebg-preview.png" alt="Doc"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <section class="left">
+        <div class="pp">
+          <img src="images/favicon-removebg-preview.png" alt="Photo CV" />
+        </div>
+        <div class="info">
+          <h1>
+            <strong>BARETEAU <br />Martin</strong>
+          </h1>
+          <strong>Âge</strong><br />20 ans
+          <img src="images/gateau.png" alt="" />
+          <br /><strong>E-mail</strong><br />martin.bareteau@gmail.com
+          <img src="images/internet-mail-3-removebg-preview.png" alt="" />
+          <br /><strong>Mobile</strong><br />06 03 45 68 81
+          <img src="images/mobile_phone_14388-removebg-preview.png" alt="" />
+          <br /><strong>Langue</strong><br />
+          Français, Anglais
+          <img
+            src="images/googletranslaterafaga_11283-removebg-preview.png"
+            alt=""
+          />
+          <h2 class="purp">COMPÉTENCES :</h2>
+          <ul>
+            <li><strong>Sérieux et rigoureux</strong></li>
+            <li><strong>Sens des responsabilités</strong></li>
+            <li><strong>Pédagogue et sens du relationnel</strong></li>
+            <li><strong>Animation et communication</strong></li>
+          </ul>
+          <h2 class="purp">CENTRES D'INTÉRÊT :</h2>
+          <select name="hobits" id="bhobits">
+            <option value="hobit1">Informatique</option>
+            <option value="hobit2">Cuisine</option>
+            <option value="hobit3">Sport</option>
+          </select>
+        </div>
+      </section>
+
+      <section>
+        <div class="stud">
+          <section>
+            <h2 class="purp">FORMATIONS</h2>
+            <ul>
+              <li>
+                <strong>BTS SIO</strong> (Système Informatique des
+                Organisations)2022 - 2023
+                <strong
+                  ><a
+                    href="https://www.campus-stemarguerite.fr/"
+                    target="_blank"
+                    >Pôle supérieur Sainte Marguerite – Chambray-Les- Tours</a
+                  ></strong
+                >-1ère année
+              </li>
+              <li>
+                <strong>Baccalauréat Technologique STI2D. 2022</strong>
+                Option Système Informatique et Numérique (SIN) -
+                <strong
+                  ><a href="https://notredamelariche.fr/" target="_blank"
+                    >Lycée Notre Dame La Riche (Tours)
+                  </a></strong
+                >– Mention Assez-Bien
+              </li>
+              <li>
+                <strong>BAFA en cours :</strong>
+                BAFA 1 : Stage théorique (Validé en Octobre 2021) BAFA 2 : Stage
+                pratique (Validé en Août 2023)
+              </li>
+              <li><strong> PSC1</strong> (Académie de Versailles)</li>
+            </ul>
+          </section>
+          <div>
+            <hr />
+          </div>
+          <section>
+            <h2 class="purp">EXPÉRIENCES PROFESSIONNELLES</h2>
+            <ul>
+              <li>
+                <strong>Employé</strong> rayon fruit et légume au
+                <strong
+                  ><a
+                    href="https://www.e.leclerc/mag/e-leclerc-fondettes"
+                    target="_blank"
+                    >L'eclerc de Fondettes</a
+                  ></strong
+                >
+                (Depuis Janvier 2024 - Temps partiel 15h le week-end)
+              </li>
+              <li>
+                <strong>Animateur</strong> sur les pauses méridiennes à l’école
+                <strong
+                  ><a
+                    href="https://www.pagesjaunes.fr/pros/12154494"
+                    target="_blank"
+                    >Gérard Philippe de Fondettes
+                  </a></strong
+                >
+                (octobre - novembre 2023, 2 mois)
+              </li>
+              <li>
+                <strong
+                  >Animateur au centre d’animation et de loisirs de
+                  <a
+                    href="https://www.pagesjaunes.fr/pros/52700211"
+                    target="_blank"
+                    >Tot’aime</a
+                  ></strong
+                >
+                - La Riche (Août 2023, 1 mois )
+                <strong>groupes 3-4 ans</strong> et <strong>6-7 ans</strong>
+                Objectif : Valider le stage pratique pour le BAFA (BAFA 2)
+              </li>
+              <li>
+                <strong>Animateur</strong> au centre d’animation et de loisirs
+                de la
+                <strong
+                  ><a href="https://lamomerie.net/" target="_blank"
+                    >Mômerie – Fondettes</a
+                  ></strong
+                >
+                Mars 2023 (2 mercredis) Remplacement d’un animateur
+                <strong>groupe 7-9 ans</strong>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <form id="formulaire">
+        <!-- vos champs de formulaire ici -->
+
+        <label class="purp">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre Nom" /><br />
+        <label class="purp">E-mail</label>
+        <input type="mail" id="email" name="email" placeholder="Votre E-Mail" />
+        <br />
+        <input type="radio" name="pro" id="pro" />
+        <label for=""> Profesionnelle </label>
+        <input type="radio" name="perso" id="perso" />
+        <label for=""> Personelle </label>
+        <div class="purp"><strong>Votre message</strong></div>
+        <textarea
+          name="message"
+          id="message"
+          rows="8"
+          placeholder="Votre message"
+        ></textarea>
+        <input required type="checkbox" name="verif" id="verif" />
+        <label>Confimer</label>
+        <button id="sub">Envoyer</button>
+      </form>
+    </main>
+    <footer>
+      <table>
+        <tr>
+          <th>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="images/220px-Instagram_logo_2022.svg.png"
+                alt="Instagram"
+            /></a>
+          </th>
+          <th>
+            <a href="https://x.com/" target="_blank"
+              ><img src="images/220px-X_logo_2023.svg.png" alt="X"
+            /></a>
+          </th>
+          <th>
+            <a href="https://fr.linkedin.com/" target="_blank"
+              ><img
+                src="images/logo-linkedin-removebg-preview.png"
+                alt="LinkedIn"
+            /></a>
+          </th>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
